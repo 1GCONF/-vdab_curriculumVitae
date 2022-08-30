@@ -1,0 +1,179 @@
+@font-face {
+  font-family: oswald_bold;
+  src: url(../fonts/Oswald-Bold.ttf);
+}
+@font-face {
+  font-family: oswald_light;
+  src: url(../fonts/Oswald-Light.ttf);
+}
+@font-face {
+  font-family: oswald_regular;
+  src: url(../fonts/Oswald-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: oswald_regular;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(90deg, rgb(14, 14, 13) 0%, rgba(84, 0, 15, 0.96) 48%, rgb(41, 2, 41) 100%);
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(90deg, rgb(14, 14, 13) 0%, rgba(84, 0, 15, 0.96) 48%, rgb(41, 2, 41) 100%);
+  /* opera 11.10+ */
+  background: -o-linear-gradient(90deg, rgb(14, 14, 13) 0%, rgba(84, 0, 15, 0.96) 48%, rgb(41, 2, 41) 100%);
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#290229", endColorstr="#0E0E0D", GradientType=0 );
+  /* ie 10+ */
+  background: -ms-linear-gradient(90deg, rgb(14, 14, 13) 0%, rgba(84, 0, 15, 0.96) 48%, rgb(41, 2, 41) 100%);
+  /* global 94%+ browsers support */
+  background: linear-gradient(90deg, rgb(14, 14, 13) 0%, rgba(84, 0, 15, 0.96) 48%, rgb(41, 2, 41) 100%);
+}
+body .cv-section {
+  width: 100%;
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(90deg, rgb(14, 14, 13) 0%, rgba(84, 0, 15, 0.96) 48%, rgb(41, 2, 41) 100%);
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(90deg, rgb(14, 14, 13) 0%, rgba(84, 0, 15, 0.96) 48%, rgb(41, 2, 41) 100%);
+  /* opera 11.10+ */
+  background: -o-linear-gradient(90deg, rgb(14, 14, 13) 0%, rgba(84, 0, 15, 0.96) 48%, rgb(41, 2, 41) 100%);
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#290229", endColorstr="#0E0E0D", GradientType=0 );
+  /* ie 10+ */
+  background: -ms-linear-gradient(90deg, rgb(14, 14, 13) 0%, rgba(84, 0, 15, 0.96) 48%, rgb(41, 2, 41) 100%);
+  /* global 94%+ browsers support */
+  background: linear-gradient(90deg, rgb(14, 14, 13) 0%, rgba(84, 0, 15, 0.96) 48%, rgb(41, 2, 41) 100%);
+  min-height: 100vh;
+  position: relative;
+}
+body .cv-section .cv-container {
+  min-height: 100vh;
+  max-width: 50%;
+  margin: 0 auto;
+  background: url(../img/achtergrond.png);
+  background-size: cover;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+body .cv-section .cv-container .headcat {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+body .cv-section .cv-container .headcat .headcat-titlebox {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+body .cv-section .cv-container .headcat .headcat-titlebox .headcat-title {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: oswald_bold;
+  font-size: 3.5rem;
+}
+body .cv-section .cv-container .headcat .headcat-textbox {
+  text-align: center;
+  position: relative;
+  transform: translateY(-50%);
+}
+body .cv-section .cv-container .headcat .headcat-textbox .headcat-text {
+  width: 90%;
+  position: relative;
+  top: 50%;
+  margin: 0 auto;
+  font-style: italic;
+  color: rgb(75, 29, 154);
+}
+body .cv-section .cv-container .subcat {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+body .cv-section .cv-container .subcat .subcat-titlebox {
+  background-color: rgb(67, 67, 187);
+  text-align: center;
+}
+body .cv-section .cv-container .subcat .subcat-titlebox .subcat-title {
+  color: white;
+  font-family: oswald_bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+body .cv-section .cv-container .subcat .subcat-detailbox {
+  background-color: rgba(168, 168, 168, 0.5);
+  margin-top: 1rem;
+}
+body .cv-section .cv-container .subcat .subcat-detailbox.personal-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-height: 165px;
+}
+body .cv-section .cv-container .subcat .subcat-detailbox .personal-info-imagebox {
+  width: 150px;
+  height: 150px;
+}
+body .cv-section .cv-container .subcat .subcat-detailbox .personal-info-imagebox > img {
+  width: 100%;
+  height: 100%;
+}
+body .cv-section .cv-container .subcat .subcat-detailbox .personal-info-textbox {
+  text-align: center;
+}
+body .cv-section .cv-container .subcat .subcat-detailbox .personal-info-textbox .personal-info-text {
+  color: rgb(67, 67, 67);
+}
+body .cv-section .cv-container .subcat .subcat-detailbox .personal-info-iconbox {
+  height: 150px;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+body .cv-section .cv-container .subcat .subcat-detailbox .personal-info-iconbox .personal-info-icon {
+  width: 50px;
+  cursor: pointer;
+  height: 48.6666666667px;
+}
+body .cv-section .cv-container .subcat .subcat-detailbox .detail-textbox {
+  text-align: center;
+}
+body .cv-section .cv-container .subcat .subcat-detailbox .detail-textbox .detail-text {
+  color: rgb(67, 67, 67);
+}
+body .cv-section .cv-container .footerbox {
+  margin-top: 1REM;
+  margin-bottom: 0.25REM;
+  text-align: center;
+  background-color: black;
+}
+body .cv-section .cv-container .footerbox .footer-text {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
